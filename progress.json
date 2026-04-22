@@ -1,0 +1,396 @@
+{
+  "updated": "2026-04-22",
+  "stages": [
+    {
+      "id": 1,
+      "name": "Фундамент",
+      "status": "done",
+      "emoji": "🏗️",
+      "items": [
+        {
+          "id": "1.1",
+          "label": "Выбор BaaS (Supabase)",
+          "status": "done"
+        },
+        {
+          "id": "1.2",
+          "label": "Expo skeleton + тема",
+          "status": "done"
+        },
+        {
+          "id": "1.3",
+          "label": "Модель данных (12 таблиц)",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Вход и профиль",
+      "status": "done",
+      "emoji": "👤",
+      "items": [
+        {
+          "id": "2.1",
+          "label": "HTML-мокапы онбординга",
+          "status": "done"
+        },
+        {
+          "id": "2.2",
+          "label": "Email magic-link auth",
+          "status": "done"
+        },
+        {
+          "id": "2.3",
+          "label": "Handle-picker",
+          "status": "done"
+        },
+        {
+          "id": "2.4",
+          "label": "ProfileScreen RN-порт",
+          "status": "done"
+        },
+        {
+          "id": "2.5",
+          "label": "Публичная ссылка gifty.app/{handle}",
+          "status": "deferred",
+          "note": "→ Этап 8"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Вишлист",
+      "status": "active",
+      "emoji": "🎁",
+      "items": [
+        {
+          "id": "3.1",
+          "label": "CRUD подарков через Supabase",
+          "status": "done"
+        },
+        {
+          "id": "3.2",
+          "label": "URL-парсер (title/image/price)",
+          "status": "deferred",
+          "note": "→ Этап 7"
+        },
+        {
+          "id": "3.3",
+          "label": "Публичный вишлист без авторизации",
+          "status": "deferred",
+          "note": "→ Этап 8"
+        },
+        {
+          "id": "3.4",
+          "label": "Share-sheet с готовым текстом",
+          "status": "deferred",
+          "note": "→ Этап 7"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Друзья и резерв",
+      "status": "done",
+      "emoji": "👥",
+      "items": [
+        {
+          "id": "4.1",
+          "label": "Поиск пользователей по handle",
+          "status": "done"
+        },
+        {
+          "id": "4.2",
+          "label": "Запрос в друзья",
+          "status": "done"
+        },
+        {
+          "id": "4.3",
+          "label": "Просмотр чужого вишлиста",
+          "status": "done"
+        },
+        {
+          "id": "4.4",
+          "label": "Резерв подарка (RLS)",
+          "status": "done"
+        },
+        {
+          "id": "4.5",
+          "label": "Push-уведомления о друзьях",
+          "status": "deferred",
+          "note": "→ Этап 7"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "События и календарь",
+      "status": "done",
+      "emoji": "📅",
+      "items": [
+        {
+          "id": "5.1",
+          "label": "CRUD событий",
+          "status": "done"
+        },
+        {
+          "id": "5.2",
+          "label": "ДР из профиля → автособытие",
+          "status": "done"
+        },
+        {
+          "id": "5.3",
+          "label": "Агрегация событий на главной",
+          "status": "done"
+        },
+        {
+          "id": "5.4",
+          "label": "Push-напоминания",
+          "status": "deferred",
+          "note": "→ Этап 7"
+        },
+        {
+          "id": "5.5",
+          "label": "Календарный экран",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Скидываемся",
+      "status": "done",
+      "emoji": "💬",
+      "items": [
+        {
+          "id": "6.1",
+          "label": "HTML-мокап скрытого чата",
+          "status": "done"
+        },
+        {
+          "id": "6.2",
+          "label": "Pool CRUD + участники + RLS",
+          "status": "done"
+        },
+        {
+          "id": "6.3",
+          "label": "Realtime-чат (Supabase)",
+          "status": "done"
+        },
+        {
+          "id": "6.4",
+          "label": "Учёт вкладов, прогресс к цели",
+          "status": "done"
+        },
+        {
+          "id": "6.5",
+          "label": "Инвайт в pool",
+          "status": "deferred",
+          "note": "→ Этап 7"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Уведомления и финальная сборка",
+      "status": "next",
+      "emoji": "🔔",
+      "items": [
+        {
+          "id": "7.1",
+          "label": "NotificationsScreen на реальных данных",
+          "status": "todo"
+        },
+        {
+          "id": "7.2",
+          "label": "Push через Expo Notifications",
+          "status": "todo"
+        },
+        {
+          "id": "7.3",
+          "label": "Deep-link из пуша",
+          "status": "todo"
+        },
+        {
+          "id": "7.4",
+          "label": "Empty/loading/error по всем экранам",
+          "status": "todo"
+        },
+        {
+          "id": "7.5",
+          "label": "Accessibility pass",
+          "status": "todo"
+        },
+        {
+          "id": "7.6",
+          "label": "Инвайт в pool (из 6.5)",
+          "status": "todo"
+        },
+        {
+          "id": "7.7",
+          "label": "URL-парсер вишлист-item (из 3.2)",
+          "status": "todo"
+        },
+        {
+          "id": "7.8",
+          "label": "Share-sheet (из 3.4)",
+          "status": "todo"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Предрелизная закалка",
+      "status": "planned",
+      "emoji": "🔒",
+      "items": [
+        {
+          "id": "8.1",
+          "label": "Google OAuth",
+          "status": "todo"
+        },
+        {
+          "id": "8.2",
+          "label": "Apple OAuth + Face ID",
+          "status": "todo"
+        },
+        {
+          "id": "8.3",
+          "label": "Домен gifty.app + публичные ссылки",
+          "status": "todo"
+        },
+        {
+          "id": "8.4",
+          "label": "Аналитика",
+          "status": "todo"
+        },
+        {
+          "id": "8.5",
+          "label": "Crash reporting (Sentry)",
+          "status": "todo"
+        },
+        {
+          "id": "8.6",
+          "label": "Privacy Policy + ToS",
+          "status": "todo"
+        },
+        {
+          "id": "8.7",
+          "label": "Иконка, сплэш, стор-скриншоты",
+          "status": "todo"
+        },
+        {
+          "id": "8.8",
+          "label": "Соответствие 152-ФЗ",
+          "status": "todo"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Закрытая бета",
+      "status": "planned",
+      "emoji": "🧪",
+      "items": [
+        {
+          "id": "9.1",
+          "label": "TestFlight + Internal Testing",
+          "status": "todo"
+        },
+        {
+          "id": "9.2",
+          "label": "Раздача 20-50 тестерам",
+          "status": "todo"
+        },
+        {
+          "id": "9.3",
+          "label": "Фидбек-раунд 1 → фиксы",
+          "status": "todo"
+        },
+        {
+          "id": "9.4",
+          "label": "Фидбек-раунд 2 → фиксы",
+          "status": "todo"
+        },
+        {
+          "id": "9.5",
+          "label": "Gate: crash-free >99%",
+          "status": "todo"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Запуск",
+      "status": "planned",
+      "emoji": "🚀",
+      "items": [
+        {
+          "id": "10.1",
+          "label": "App Store Connect — сабмит",
+          "status": "todo"
+        },
+        {
+          "id": "10.2",
+          "label": "Google Play Console — сабмит",
+          "status": "todo"
+        },
+        {
+          "id": "10.3",
+          "label": "Раунды реджектов",
+          "status": "todo"
+        },
+        {
+          "id": "10.4",
+          "label": "Soft launch КЗ/УЗ/КГ",
+          "status": "todo"
+        },
+        {
+          "id": "10.5",
+          "label": "Мониторинг DAU/MAU",
+          "status": "todo"
+        },
+        {
+          "id": "10.6",
+          "label": "Hot-fix pipeline (EAS Update)",
+          "status": "todo"
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "month": "Апр 2026",
+      "label": "Этапы 1–6",
+      "status": "done",
+      "current": true
+    },
+    {
+      "month": "Июн 2026",
+      "label": "Этап 7 — уведомления",
+      "status": "next"
+    },
+    {
+      "month": "Июл–Авг 2026",
+      "label": "Этап 8 — предрелиз",
+      "status": "planned"
+    },
+    {
+      "month": "Сен 2026",
+      "label": "Этап 9 — бета",
+      "status": "planned"
+    },
+    {
+      "month": "Окт–Ноя 2026",
+      "label": "Этап 10 — запуск 🎉",
+      "status": "planned"
+    }
+  ],
+  "stats": {
+    "stagesDone": "6/10",
+    "nextStage": "Этап 7",
+    "screensReady": "13",
+    "release": "Окт'26"
+  }
+}
