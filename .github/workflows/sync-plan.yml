@@ -1,0 +1,31 @@
+name: Sync МАСТЕР-ПЛАН
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # каждые 30 минут
+  workflow_dispatch:          # ручной запуск
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gifty-dashboard
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Fetch МАСТЕР-ПЛАН.md from claudes-folder
+        run: |
+          curl -sf \
+            -H "Authorization: token ${{ secrets.GH_PAT }}" \
+            -H "Accept: application/vnd.github.raw" \
+            "https://api.github.com/repos/konst3658-crypto/claudes-folder/contents/project%201/plans/%D0%9C%D0%90%D0%A1%D0%A2%D0%95%D0%A0-%D0%9F%D0%9B%D0%90%D0%9D.md" \
+            -o data.md
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.md
+          git diff --cached --quiet || git commit -m "sync: update data.md from МАСТЕР-ПЛАН"
+          git push
