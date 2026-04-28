@@ -1,9 +1,9 @@
 name: Sync МАСТЕР-ПЛАН
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'   # каждые 30 минут
-  workflow_dispatch:          # ручной запуск
+  repository_dispatch:
+    types: [plan-updated]
+  workflow_dispatch:
 
 jobs:
   sync:
